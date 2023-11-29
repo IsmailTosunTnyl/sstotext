@@ -16,7 +16,6 @@ server_socket.bind((ip_address, 12345))
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# define a thread for remote control
 
 
 
@@ -87,6 +86,7 @@ def show_area():
     # Display the modified screenshot
     screenshot.show()
 
+# define a thread for remote control
 
 
 def remote_control():
