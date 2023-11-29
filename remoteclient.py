@@ -87,4 +87,5 @@ send_button = tk.Button(root, text="Get Data", command=button_click)
 send_button.pack()
 
 # Start the GUI
+root.geometry("180x250")
 root.mainloop()

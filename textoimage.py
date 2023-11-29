@@ -9,7 +9,10 @@ import socket
 import json
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(('localhost', 12345))
+# get localmachine ip address
+ip_address = socket.gethostbyname(socket.gethostname())
+print("IP Address:", ip_address)
+server_socket.bind((ip_address, 12345))
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
